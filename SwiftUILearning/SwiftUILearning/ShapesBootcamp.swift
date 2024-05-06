@@ -20,7 +20,7 @@ struct ShapesBootcamp: View {
 //            .stroke(Color.purple, lineWidth: 50)
         
         
-        
+        Circle()
 //        Ellipse()
 //            .frame(width: 200, height: 100)
         
