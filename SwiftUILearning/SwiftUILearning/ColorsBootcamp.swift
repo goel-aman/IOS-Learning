@@ -12,10 +12,15 @@ struct ColorsBootcamp: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 25.0)
             .fill(
-                Color(color)
+//                Color(color)
+//                Color(UIColor.secondarySystemBackground)
+                Color("customColors")
             )
             .frame(width: 300, height: 300)
-            
+//            .shadow(radius: 10)
+//            .shadow(color: .black, radius: 10)
+        
+            .shadow(radius: 10,x: 10, y: 20)
     }
 }
 
