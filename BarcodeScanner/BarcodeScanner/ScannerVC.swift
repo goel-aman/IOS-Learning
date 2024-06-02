@@ -47,10 +47,11 @@ final class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate 
         
         
         guard let previewLayer = previewLayer else {
-            scannerDelegate?.didSurface(error: <#T##CameraError#>)
+            scannerDelegate?.didSurface(error: .invalidDeviceInput)
+            return
         }
         
-        previewLayer?.frame = view.layer.bounds
+        previewLayer.frame = view.layer.bounds
     }
     
     private func setupCaptureSession() {

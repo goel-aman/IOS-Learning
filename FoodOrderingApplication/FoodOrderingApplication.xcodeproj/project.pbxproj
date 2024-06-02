@@ -7,65 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E14AF552C0B654C0040CED2 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF542C0B654C0040CED2 /* ScannerView.swift */; };
-		1EBD8BD12BFE5703005FB012 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BD02BFE5703005FB012 /* BarcodeScannerApp.swift */; };
-		1EBD8BD32BFE5703005FB012 /* BarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BD22BFE5703005FB012 /* BarcodeScanner.swift */; };
-		1EBD8BD52BFE5705005FB012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBD8BD42BFE5705005FB012 /* Assets.xcassets */; };
-		1EBD8BD82BFE5705005FB012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EBD8BD72BFE5705005FB012 /* Preview Assets.xcassets */; };
-		1EBD8BE22BFE5705005FB012 /* BarcodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BE12BFE5705005FB012 /* BarcodeScannerTests.swift */; };
-		1EBD8BEC2BFE5705005FB012 /* BarcodeScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BEB2BFE5705005FB012 /* BarcodeScannerUITests.swift */; };
-		1EBD8BEE2BFE5705005FB012 /* BarcodeScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BED2BFE5705005FB012 /* BarcodeScannerUITestsLaunchTests.swift */; };
-		1EBD8BFB2BFEE635005FB012 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD8BFA2BFEE635005FB012 /* ScannerVC.swift */; };
+		1E14AF632C0C51A30040CED2 /* FoodOrderingApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF622C0C51A30040CED2 /* FoodOrderingApplicationApp.swift */; };
+		1E14AF652C0C51A30040CED2 /* FoodAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF642C0C51A30040CED2 /* FoodAppTabView.swift */; };
+		1E14AF672C0C51A60040CED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E14AF662C0C51A60040CED2 /* Assets.xcassets */; };
+		1E14AF6A2C0C51A60040CED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E14AF692C0C51A60040CED2 /* Preview Assets.xcassets */; };
+		1E14AF742C0C51A60040CED2 /* FoodOrderingApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF732C0C51A60040CED2 /* FoodOrderingApplicationTests.swift */; };
+		1E14AF7E2C0C51A60040CED2 /* FoodOrderingApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF7D2C0C51A60040CED2 /* FoodOrderingApplicationUITests.swift */; };
+		1E14AF802C0C51A60040CED2 /* FoodOrderingApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF7F2C0C51A60040CED2 /* FoodOrderingApplicationUITestsLaunchTests.swift */; };
+		1E14AF8D2C0C564E0040CED2 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */; };
+		1E14AF8F2C0C56880040CED2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF8E2C0C56880040CED2 /* AccountView.swift */; };
+		1E14AF912C0C56AE0040CED2 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF902C0C56AE0040CED2 /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1EBD8BDE2BFE5705005FB012 /* PBXContainerItemProxy */ = {
+		1E14AF702C0C51A60040CED2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1EBD8BC52BFE5703005FB012 /* Project object */;
+			containerPortal = 1E14AF572C0C51A30040CED2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EBD8BCC2BFE5703005FB012;
-			remoteInfo = BarcodeScanner;
+			remoteGlobalIDString = 1E14AF5E2C0C51A30040CED2;
+			remoteInfo = FoodOrderingApplication;
 		};
-		1EBD8BE82BFE5705005FB012 /* PBXContainerItemProxy */ = {
+		1E14AF7A2C0C51A60040CED2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1EBD8BC52BFE5703005FB012 /* Project object */;
+			containerPortal = 1E14AF572C0C51A30040CED2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EBD8BCC2BFE5703005FB012;
-			remoteInfo = BarcodeScanner;
+			remoteGlobalIDString = 1E14AF5E2C0C51A30040CED2;
+			remoteInfo = FoodOrderingApplication;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E14AF542C0B654C0040CED2 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
-		1EBD8BCD2BFE5703005FB012 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBD8BD02BFE5703005FB012 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
-		1EBD8BD22BFE5703005FB012 /* BarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanner.swift; sourceTree = "<group>"; };
-		1EBD8BD42BFE5705005FB012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1EBD8BD72BFE5705005FB012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1EBD8BDD2BFE5705005FB012 /* BarcodeScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBD8BE12BFE5705005FB012 /* BarcodeScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerTests.swift; sourceTree = "<group>"; };
-		1EBD8BE72BFE5705005FB012 /* BarcodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EBD8BEB2BFE5705005FB012 /* BarcodeScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerUITests.swift; sourceTree = "<group>"; };
-		1EBD8BED2BFE5705005FB012 /* BarcodeScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1EBD8BFA2BFEE635005FB012 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		1E14AF5F2C0C51A30040CED2 /* FoodOrderingApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodOrderingApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E14AF622C0C51A30040CED2 /* FoodOrderingApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingApplicationApp.swift; sourceTree = "<group>"; };
+		1E14AF642C0C51A30040CED2 /* FoodAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppTabView.swift; sourceTree = "<group>"; };
+		1E14AF662C0C51A60040CED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E14AF692C0C51A60040CED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E14AF6F2C0C51A60040CED2 /* FoodOrderingApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodOrderingApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E14AF732C0C51A60040CED2 /* FoodOrderingApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingApplicationTests.swift; sourceTree = "<group>"; };
+		1E14AF792C0C51A60040CED2 /* FoodOrderingApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodOrderingApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E14AF7D2C0C51A60040CED2 /* FoodOrderingApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingApplicationUITests.swift; sourceTree = "<group>"; };
+		1E14AF7F2C0C51A60040CED2 /* FoodOrderingApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOrderingApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		1E14AF8E2C0C56880040CED2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		1E14AF902C0C56AE0040CED2 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1EBD8BCA2BFE5703005FB012 /* Frameworks */ = {
+		1E14AF5C2C0C51A30040CED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BDA2BFE5705005FB012 /* Frameworks */ = {
+		1E14AF6C2C0C51A60040CED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BE42BFE5705005FB012 /* Frameworks */ = {
+		1E14AF762C0C51A60040CED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,144 +77,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EBD8BC42BFE5703005FB012 = {
+		1E14AF562C0C51A30040CED2 = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BCF2BFE5703005FB012 /* BarcodeScanner */,
-				1EBD8BE02BFE5705005FB012 /* BarcodeScannerTests */,
-				1EBD8BEA2BFE5705005FB012 /* BarcodeScannerUITests */,
-				1EBD8BCE2BFE5703005FB012 /* Products */,
+				1E14AF612C0C51A30040CED2 /* FoodOrderingApplication */,
+				1E14AF722C0C51A60040CED2 /* FoodOrderingApplicationTests */,
+				1E14AF7C2C0C51A60040CED2 /* FoodOrderingApplicationUITests */,
+				1E14AF602C0C51A30040CED2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1EBD8BCE2BFE5703005FB012 /* Products */ = {
+		1E14AF602C0C51A30040CED2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BCD2BFE5703005FB012 /* BarcodeScanner.app */,
-				1EBD8BDD2BFE5705005FB012 /* BarcodeScannerTests.xctest */,
-				1EBD8BE72BFE5705005FB012 /* BarcodeScannerUITests.xctest */,
+				1E14AF5F2C0C51A30040CED2 /* FoodOrderingApplication.app */,
+				1E14AF6F2C0C51A60040CED2 /* FoodOrderingApplicationTests.xctest */,
+				1E14AF792C0C51A60040CED2 /* FoodOrderingApplicationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1EBD8BCF2BFE5703005FB012 /* BarcodeScanner */ = {
+		1E14AF612C0C51A30040CED2 /* FoodOrderingApplication */ = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BD02BFE5703005FB012 /* BarcodeScannerApp.swift */,
-				1EBD8BD22BFE5703005FB012 /* BarcodeScanner.swift */,
-				1EBD8BD42BFE5705005FB012 /* Assets.xcassets */,
-				1EBD8BD62BFE5705005FB012 /* Preview Content */,
-				1EBD8BFA2BFEE635005FB012 /* ScannerVC.swift */,
-				1E14AF542C0B654C0040CED2 /* ScannerView.swift */,
+				1E14AF622C0C51A30040CED2 /* FoodOrderingApplicationApp.swift */,
+				1E14AF642C0C51A30040CED2 /* FoodAppTabView.swift */,
+				1E14AF662C0C51A60040CED2 /* Assets.xcassets */,
+				1E14AF682C0C51A60040CED2 /* Preview Content */,
+				1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */,
+				1E14AF8E2C0C56880040CED2 /* AccountView.swift */,
+				1E14AF902C0C56AE0040CED2 /* OrderView.swift */,
 			);
-			path = BarcodeScanner;
+			path = FoodOrderingApplication;
 			sourceTree = "<group>";
 		};
-		1EBD8BD62BFE5705005FB012 /* Preview Content */ = {
+		1E14AF682C0C51A60040CED2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BD72BFE5705005FB012 /* Preview Assets.xcassets */,
+				1E14AF692C0C51A60040CED2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1EBD8BE02BFE5705005FB012 /* BarcodeScannerTests */ = {
+		1E14AF722C0C51A60040CED2 /* FoodOrderingApplicationTests */ = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BE12BFE5705005FB012 /* BarcodeScannerTests.swift */,
+				1E14AF732C0C51A60040CED2 /* FoodOrderingApplicationTests.swift */,
 			);
-			path = BarcodeScannerTests;
+			path = FoodOrderingApplicationTests;
 			sourceTree = "<group>";
 		};
-		1EBD8BEA2BFE5705005FB012 /* BarcodeScannerUITests */ = {
+		1E14AF7C2C0C51A60040CED2 /* FoodOrderingApplicationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1EBD8BEB2BFE5705005FB012 /* BarcodeScannerUITests.swift */,
-				1EBD8BED2BFE5705005FB012 /* BarcodeScannerUITestsLaunchTests.swift */,
+				1E14AF7D2C0C51A60040CED2 /* FoodOrderingApplicationUITests.swift */,
+				1E14AF7F2C0C51A60040CED2 /* FoodOrderingApplicationUITestsLaunchTests.swift */,
 			);
-			path = BarcodeScannerUITests;
+			path = FoodOrderingApplicationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1EBD8BCC2BFE5703005FB012 /* BarcodeScanner */ = {
+		1E14AF5E2C0C51A30040CED2 /* FoodOrderingApplication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EBD8BF12BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */;
+			buildConfigurationList = 1E14AF832C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplication" */;
 			buildPhases = (
-				1EBD8BC92BFE5703005FB012 /* Sources */,
-				1EBD8BCA2BFE5703005FB012 /* Frameworks */,
-				1EBD8BCB2BFE5703005FB012 /* Resources */,
+				1E14AF5B2C0C51A30040CED2 /* Sources */,
+				1E14AF5C2C0C51A30040CED2 /* Frameworks */,
+				1E14AF5D2C0C51A30040CED2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BarcodeScanner;
-			productName = BarcodeScanner;
-			productReference = 1EBD8BCD2BFE5703005FB012 /* BarcodeScanner.app */;
+			name = FoodOrderingApplication;
+			productName = FoodOrderingApplication;
+			productReference = 1E14AF5F2C0C51A30040CED2 /* FoodOrderingApplication.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1EBD8BDC2BFE5705005FB012 /* BarcodeScannerTests */ = {
+		1E14AF6E2C0C51A60040CED2 /* FoodOrderingApplicationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EBD8BF42BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScannerTests" */;
+			buildConfigurationList = 1E14AF862C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplicationTests" */;
 			buildPhases = (
-				1EBD8BD92BFE5705005FB012 /* Sources */,
-				1EBD8BDA2BFE5705005FB012 /* Frameworks */,
-				1EBD8BDB2BFE5705005FB012 /* Resources */,
+				1E14AF6B2C0C51A60040CED2 /* Sources */,
+				1E14AF6C2C0C51A60040CED2 /* Frameworks */,
+				1E14AF6D2C0C51A60040CED2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1EBD8BDF2BFE5705005FB012 /* PBXTargetDependency */,
+				1E14AF712C0C51A60040CED2 /* PBXTargetDependency */,
 			);
-			name = BarcodeScannerTests;
-			productName = BarcodeScannerTests;
-			productReference = 1EBD8BDD2BFE5705005FB012 /* BarcodeScannerTests.xctest */;
+			name = FoodOrderingApplicationTests;
+			productName = FoodOrderingApplicationTests;
+			productReference = 1E14AF6F2C0C51A60040CED2 /* FoodOrderingApplicationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1EBD8BE62BFE5705005FB012 /* BarcodeScannerUITests */ = {
+		1E14AF782C0C51A60040CED2 /* FoodOrderingApplicationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1EBD8BF72BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScannerUITests" */;
+			buildConfigurationList = 1E14AF892C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplicationUITests" */;
 			buildPhases = (
-				1EBD8BE32BFE5705005FB012 /* Sources */,
-				1EBD8BE42BFE5705005FB012 /* Frameworks */,
-				1EBD8BE52BFE5705005FB012 /* Resources */,
+				1E14AF752C0C51A60040CED2 /* Sources */,
+				1E14AF762C0C51A60040CED2 /* Frameworks */,
+				1E14AF772C0C51A60040CED2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1EBD8BE92BFE5705005FB012 /* PBXTargetDependency */,
+				1E14AF7B2C0C51A60040CED2 /* PBXTargetDependency */,
 			);
-			name = BarcodeScannerUITests;
-			productName = BarcodeScannerUITests;
-			productReference = 1EBD8BE72BFE5705005FB012 /* BarcodeScannerUITests.xctest */;
+			name = FoodOrderingApplicationUITests;
+			productName = FoodOrderingApplicationUITests;
+			productReference = 1E14AF792C0C51A60040CED2 /* FoodOrderingApplicationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1EBD8BC52BFE5703005FB012 /* Project object */ = {
+		1E14AF572C0C51A30040CED2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					1EBD8BCC2BFE5703005FB012 = {
+					1E14AF5E2C0C51A30040CED2 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					1EBD8BDC2BFE5705005FB012 = {
+					1E14AF6E2C0C51A60040CED2 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1EBD8BCC2BFE5703005FB012;
+						TestTargetID = 1E14AF5E2C0C51A30040CED2;
 					};
-					1EBD8BE62BFE5705005FB012 = {
+					1E14AF782C0C51A60040CED2 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1EBD8BCC2BFE5703005FB012;
+						TestTargetID = 1E14AF5E2C0C51A30040CED2;
 					};
 				};
 			};
-			buildConfigurationList = 1EBD8BC82BFE5703005FB012 /* Build configuration list for PBXProject "BarcodeScanner" */;
+			buildConfigurationList = 1E14AF5A2C0C51A30040CED2 /* Build configuration list for PBXProject "FoodOrderingApplication" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,36 +223,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 1EBD8BC42BFE5703005FB012;
-			productRefGroup = 1EBD8BCE2BFE5703005FB012 /* Products */;
+			mainGroup = 1E14AF562C0C51A30040CED2;
+			productRefGroup = 1E14AF602C0C51A30040CED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EBD8BCC2BFE5703005FB012 /* BarcodeScanner */,
-				1EBD8BDC2BFE5705005FB012 /* BarcodeScannerTests */,
-				1EBD8BE62BFE5705005FB012 /* BarcodeScannerUITests */,
+				1E14AF5E2C0C51A30040CED2 /* FoodOrderingApplication */,
+				1E14AF6E2C0C51A60040CED2 /* FoodOrderingApplicationTests */,
+				1E14AF782C0C51A60040CED2 /* FoodOrderingApplicationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1EBD8BCB2BFE5703005FB012 /* Resources */ = {
+		1E14AF5D2C0C51A30040CED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBD8BD82BFE5705005FB012 /* Preview Assets.xcassets in Resources */,
-				1EBD8BD52BFE5705005FB012 /* Assets.xcassets in Resources */,
+				1E14AF6A2C0C51A60040CED2 /* Preview Assets.xcassets in Resources */,
+				1E14AF672C0C51A60040CED2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BDB2BFE5705005FB012 /* Resources */ = {
+		1E14AF6D2C0C51A60040CED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BE52BFE5705005FB012 /* Resources */ = {
+		1E14AF772C0C51A60040CED2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,51 +262,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1EBD8BC92BFE5703005FB012 /* Sources */ = {
+		1E14AF5B2C0C51A30040CED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBD8BFB2BFEE635005FB012 /* ScannerVC.swift in Sources */,
-				1E14AF552C0B654C0040CED2 /* ScannerView.swift in Sources */,
-				1EBD8BD32BFE5703005FB012 /* BarcodeScanner.swift in Sources */,
-				1EBD8BD12BFE5703005FB012 /* BarcodeScannerApp.swift in Sources */,
+				1E14AF8F2C0C56880040CED2 /* AccountView.swift in Sources */,
+				1E14AF8D2C0C564E0040CED2 /* FoodListView.swift in Sources */,
+				1E14AF652C0C51A30040CED2 /* FoodAppTabView.swift in Sources */,
+				1E14AF632C0C51A30040CED2 /* FoodOrderingApplicationApp.swift in Sources */,
+				1E14AF912C0C56AE0040CED2 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BD92BFE5705005FB012 /* Sources */ = {
+		1E14AF6B2C0C51A60040CED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBD8BE22BFE5705005FB012 /* BarcodeScannerTests.swift in Sources */,
+				1E14AF742C0C51A60040CED2 /* FoodOrderingApplicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EBD8BE32BFE5705005FB012 /* Sources */ = {
+		1E14AF752C0C51A60040CED2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBD8BEE2BFE5705005FB012 /* BarcodeScannerUITestsLaunchTests.swift in Sources */,
-				1EBD8BEC2BFE5705005FB012 /* BarcodeScannerUITests.swift in Sources */,
+				1E14AF7E2C0C51A60040CED2 /* FoodOrderingApplicationUITests.swift in Sources */,
+				1E14AF802C0C51A60040CED2 /* FoodOrderingApplicationUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EBD8BDF2BFE5705005FB012 /* PBXTargetDependency */ = {
+		1E14AF712C0C51A60040CED2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1EBD8BCC2BFE5703005FB012 /* BarcodeScanner */;
-			targetProxy = 1EBD8BDE2BFE5705005FB012 /* PBXContainerItemProxy */;
+			target = 1E14AF5E2C0C51A30040CED2 /* FoodOrderingApplication */;
+			targetProxy = 1E14AF702C0C51A60040CED2 /* PBXContainerItemProxy */;
 		};
-		1EBD8BE92BFE5705005FB012 /* PBXTargetDependency */ = {
+		1E14AF7B2C0C51A60040CED2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1EBD8BCC2BFE5703005FB012 /* BarcodeScanner */;
-			targetProxy = 1EBD8BE82BFE5705005FB012 /* PBXContainerItemProxy */;
+			target = 1E14AF5E2C0C51A30040CED2 /* FoodOrderingApplication */;
+			targetProxy = 1E14AF7A2C0C51A60040CED2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1EBD8BEF2BFE5705005FB012 /* Debug */ = {
+		1E14AF812C0C51A60040CED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -366,7 +370,7 @@
 			};
 			name = Debug;
 		};
-		1EBD8BF02BFE5705005FB012 /* Release */ = {
+		1E14AF822C0C51A60040CED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -422,18 +426,17 @@
 			};
 			name = Release;
 		};
-		1EBD8BF22BFE5705005FB012 /* Debug */ = {
+		1E14AF842C0C51A60040CED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BarcodeScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodOrderingApplication/Preview Content\"";
 				DEVELOPMENT_TEAM = BLM4H4R54R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use the camera to scan barcodes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -452,18 +455,17 @@
 			};
 			name = Debug;
 		};
-		1EBD8BF32BFE5705005FB012 /* Release */ = {
+		1E14AF852C0C51A60040CED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BarcodeScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodOrderingApplication/Preview Content\"";
 				DEVELOPMENT_TEAM = BLM4H4R54R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use the camera to scan barcodes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -482,7 +484,7 @@
 			};
 			name = Release;
 		};
-		1EBD8BF52BFE5705005FB012 /* Debug */ = {
+		1E14AF872C0C51A60040CED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -493,16 +495,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScannerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BarcodeScanner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodOrderingApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodOrderingApplication";
 			};
 			name = Debug;
 		};
-		1EBD8BF62BFE5705005FB012 /* Release */ = {
+		1E14AF882C0C51A60040CED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -513,16 +515,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScannerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BarcodeScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BarcodeScanner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodOrderingApplication.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FoodOrderingApplication";
 			};
 			name = Release;
 		};
-		1EBD8BF82BFE5705005FB012 /* Debug */ = {
+		1E14AF8A2C0C51A60040CED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -531,16 +533,16 @@
 				DEVELOPMENT_TEAM = BLM4H4R54R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScannerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplicationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BarcodeScanner;
+				TEST_TARGET_NAME = FoodOrderingApplication;
 			};
 			name = Debug;
 		};
-		1EBD8BF92BFE5705005FB012 /* Release */ = {
+		1E14AF8B2C0C51A60040CED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -549,55 +551,55 @@
 				DEVELOPMENT_TEAM = BLM4H4R54R;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.BarcodeScannerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.FoodOrderingApplicationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BarcodeScanner;
+				TEST_TARGET_NAME = FoodOrderingApplication;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1EBD8BC82BFE5703005FB012 /* Build configuration list for PBXProject "BarcodeScanner" */ = {
+		1E14AF5A2C0C51A30040CED2 /* Build configuration list for PBXProject "FoodOrderingApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBD8BEF2BFE5705005FB012 /* Debug */,
-				1EBD8BF02BFE5705005FB012 /* Release */,
+				1E14AF812C0C51A60040CED2 /* Debug */,
+				1E14AF822C0C51A60040CED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1EBD8BF12BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */ = {
+		1E14AF832C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBD8BF22BFE5705005FB012 /* Debug */,
-				1EBD8BF32BFE5705005FB012 /* Release */,
+				1E14AF842C0C51A60040CED2 /* Debug */,
+				1E14AF852C0C51A60040CED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1EBD8BF42BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScannerTests" */ = {
+		1E14AF862C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplicationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBD8BF52BFE5705005FB012 /* Debug */,
-				1EBD8BF62BFE5705005FB012 /* Release */,
+				1E14AF872C0C51A60040CED2 /* Debug */,
+				1E14AF882C0C51A60040CED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1EBD8BF72BFE5705005FB012 /* Build configuration list for PBXNativeTarget "BarcodeScannerUITests" */ = {
+		1E14AF892C0C51A60040CED2 /* Build configuration list for PBXNativeTarget "FoodOrderingApplicationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBD8BF82BFE5705005FB012 /* Debug */,
-				1EBD8BF92BFE5705005FB012 /* Release */,
+				1E14AF8A2C0C51A60040CED2 /* Debug */,
+				1E14AF8B2C0C51A60040CED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1EBD8BC52BFE5703005FB012 /* Project object */;
+	rootObject = 1E14AF572C0C51A30040CED2 /* Project object */;
 }
