@@ -26,7 +26,8 @@ struct FoodAppTabView: View {
                     Text("Order")
                 }
         }
-    } 
+        .accentColor(Color("brandPrimary"))
+    }
 }
 
 #Preview {

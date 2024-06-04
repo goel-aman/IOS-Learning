@@ -17,6 +17,10 @@
 		1E14AF8D2C0C564E0040CED2 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */; };
 		1E14AF8F2C0C56880040CED2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF8E2C0C56880040CED2 /* AccountView.swift */; };
 		1E14AF912C0C56AE0040CED2 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF902C0C56AE0040CED2 /* OrderView.swift */; };
+		1E14AF932C0CE9C90040CED2 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF922C0CE9C90040CED2 /* Foods.swift */; };
+		1E14AF952C0E21F80040CED2 /* FoodLIstViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF942C0E21F80040CED2 /* FoodLIstViewCell.swift */; };
+		1E14AF972C0E2EE60040CED2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF962C0E2EE60040CED2 /* NetworkManager.swift */; };
+		1E14AF992C0E37D30040CED2 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E14AF982C0E37D30040CED2 /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
 		1E14AF8E2C0C56880040CED2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		1E14AF902C0C56AE0040CED2 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		1E14AF922C0CE9C90040CED2 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		1E14AF942C0E21F80040CED2 /* FoodLIstViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLIstViewCell.swift; sourceTree = "<group>"; };
+		1E14AF962C0E2EE60040CED2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1E14AF982C0E37D30040CED2 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,10 @@
 				1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */,
 				1E14AF8E2C0C56880040CED2 /* AccountView.swift */,
 				1E14AF902C0C56AE0040CED2 /* OrderView.swift */,
+				1E14AF922C0CE9C90040CED2 /* Foods.swift */,
+				1E14AF942C0E21F80040CED2 /* FoodLIstViewCell.swift */,
+				1E14AF962C0E2EE60040CED2 /* NetworkManager.swift */,
+				1E14AF982C0E37D30040CED2 /* APError.swift */,
 			);
 			path = FoodOrderingApplication;
 			sourceTree = "<group>";
@@ -266,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E14AF952C0E21F80040CED2 /* FoodLIstViewCell.swift in Sources */,
+				1E14AF992C0E37D30040CED2 /* APError.swift in Sources */,
 				1E14AF8F2C0C56880040CED2 /* AccountView.swift in Sources */,
 				1E14AF8D2C0C564E0040CED2 /* FoodListView.swift in Sources */,
 				1E14AF652C0C51A30040CED2 /* FoodAppTabView.swift in Sources */,
+				1E14AF972C0E2EE60040CED2 /* NetworkManager.swift in Sources */,
+				1E14AF932C0CE9C90040CED2 /* Foods.swift in Sources */,
 				1E14AF632C0C51A30040CED2 /* FoodOrderingApplicationApp.swift in Sources */,
 				1E14AF912C0C56AE0040CED2 /* OrderView.swift in Sources */,
 			);
