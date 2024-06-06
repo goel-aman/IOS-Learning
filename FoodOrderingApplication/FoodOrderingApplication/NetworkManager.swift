@@ -18,14 +18,14 @@ final class networkManager {
         
     }
     
-    func getAppetizers(completion: @escaping (Result<[Food], APError>) -> Void) {
+    func getAppetizers(completion: @escaping (Result<[FoodModel], APError>) -> Void) {
         guard let url = URL(string: appetizerURL) else {
             completion(.failure(.invalidURL))
             return
         }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) {  data, response, error in
-            guard let _ = error else {
+            if let _ = error {
                 completion(.failure(.unableToComplete))
                 return
             }

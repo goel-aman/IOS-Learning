@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Food: Decodable, Identifiable {
+struct FoodModel: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
@@ -19,11 +19,11 @@ struct Food: Decodable, Identifiable {
 }
 
 struct FoodResponse: Decodable {
-    let request: [Food]
+    let request: [FoodModel]
 }
 
 struct MockData {
-    static let sampleFood = Food(
+    static let sampleFood = FoodModel(
         id: 0001,
         name:  "Test Food",
         description: "This is the description for my food dish. It's yummy",

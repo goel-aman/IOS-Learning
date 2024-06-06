@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FoodLIstViewCell: View {
-    let food: Food
+    let food: FoodModel
     
     var body: some View {
         HStack {
