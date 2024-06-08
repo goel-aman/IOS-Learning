@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FoodModel: Decodable, Identifiable {
+struct FoodModel: Decodable, Identifiable, Hashable {
     let id: Int
     let name: String
     let description: String

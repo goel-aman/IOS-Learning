@@ -12,8 +12,8 @@ struct FoodLIstViewCell: View {
     
     var body: some View {
         HStack {
-            Image("foodImage")
-                .resizable()
+            foodImageView(urlString: food.imageURL)
+//                .resizable()
                 .frame(width: 80, height: 80)
                 .cornerRadius(8.0)
                 
