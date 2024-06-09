@@ -8,94 +8,108 @@
 import SwiftUI
 
 struct FoodDetailView: View {
+    
+    let food: FoodModel
+    
     var body: some View {
         
-        ZStack {
+        VStack {
+            Image("foodImage")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 225)
             
             VStack {
-                
-                Image("food-placeholder")
-                    .resizable()
-                    .frame(width: .infinity, height: 300)
-                
-                
-                Text("Chicken Wings")
+                Text(food.name)
+                    .font(.title2)
                     .fontWeight(.semibold)
-                    .font(.title)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
                 
-                Text("You'll need exta napkins with these tasty treats")
-                    .font(.title3)
+                
+                Text(food.description)
                     .multilineTextAlignment(.center)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 50, trailing: 0))
-                
-                
+                    .font(.body)
+                    .padding()
                 
                 HStack (spacing: 40) {
-                    VStack (spacing: 20) {
+                    VStack (spacing: 5) {
                         Text("Calories")
-                            .font(.title3)
-                            .fontWeight(.medium)
+                            .font(.caption)
+                            .fontWeight(.bold)
                         
-                        Text("700")
-                    }
-                    VStack (spacing: 20) {
-                        Text("Carbs")
-                            .font(.title3)
-                            .fontWeight(.medium)
+                        Text("\(food.calories)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
                         
-                        Text("11 g")
                     }
-                    VStack (spacing: 20) {
-                        Text("Protein")
-                            .font(.title3)
-                            .fontWeight(.medium)
-                        
-                        Text("13 g")
-                    }
-                }
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
-                
-                
-                Button(action: {
                     
-                }) {
-                    Text("$11.90 - Add To Cart")
-                        .padding(EdgeInsets(top: 12, leading: 70, bottom: 12, trailing: 70))
-                        .foregroundColor(.white)
-                        .background(.green)
-                        .cornerRadius(10)
+                    VStack (spacing: 5) {
+                        Text("Carbs")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                        
+                        Text("\(food.calories)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                        
+                    }
+                    
+                    VStack (spacing: 5) {
+                        Text("Protein")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                        
+                        Text("\(food.calories)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                        
+                    }
                 }
                 
-                Spacer()
             }
             
-            VStack {
-                
-                
-                
-                HStack {
-                    Spacer()
-                    
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "xmark")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                        
-                    }
-                    .padding(25)
+            Spacer()
+            
+            Button {
+                print("tapped")
+            } label: {
+                Text("$\(food.price, specifier: "%.2f") - Add T o Order")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .frame(width: 260, height: 50)
+                    .foregroundColor(.white)
+                    .background(Color("brandPrimary"))
                     .cornerRadius(10)
-                }
-                
-                Spacer()
                 
             }
+            .padding(.bottom, 30)
+            
         }
+        .frame(width: 300, height: 525)
+        .background(Color(.systemBackground))
+        .cornerRadius(12)
+        .shadow(radius: 40)
+        .overlay(
+            Button {
+                print("dismiss")
+            } label: {
+                ZStack {
+                    Circle()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.white)
+                        .opacity(0.6)
+                    
+                    Image(systemName: "xmark")
+                        .imageScale(.small)
+                        .frame(width: 44, height: 44)
+                        .foregroundColor(.black)
+                }
+            },alignment: .topTrailing)
     }
 }
 
 #Preview {
-    FoodDetailView()
+    FoodDetailView(food: MockData.sampleFood)
 }

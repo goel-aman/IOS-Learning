@@ -13,7 +13,7 @@ struct FoodListView: View {
     
     var body: some View {
         ZStack {
-            NavigationView {
+            NavigationStack {
                 List(viewModel.foods) { food in
                     NavigationLink(value: food) {
                         FoodLIstViewCell(food: food)
@@ -21,12 +21,8 @@ struct FoodListView: View {
                 }
                 .navigationTitle("Meals")
                 .navigationDestination(for: FoodModel.self) { food in
-                    FoodDetailView()
+                    FoodDetailView(food: food)  
                 }
-//                .popover(isPresented: $showingPopOver, content: {
-//                    FoodDetailView()
-//                })
-                
             }
             .onAppear {
                 viewModel.getFoods()
