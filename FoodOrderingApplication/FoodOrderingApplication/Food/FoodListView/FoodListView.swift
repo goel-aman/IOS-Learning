@@ -9,20 +9,18 @@ import SwiftUI
 
 struct FoodListView: View {
     @StateObject var viewModel = FoodListViewModel()
-    @State private var showingPopOver = true
+    @State private var isShowingDetail = false
     
     var body: some View {
         ZStack {
-            NavigationStack {
+            NavigationView {
                 List(viewModel.foods) { food in
-                    NavigationLink(value: food) {
-                        FoodLIstViewCell(food: food)
-                    }
+                    FoodLIstViewCell(food: food)
+                        .onTapGesture {
+                            
+                        }
                 }
                 .navigationTitle("Meals")
-                .navigationDestination(for: FoodModel.self) { food in
-                    FoodDetailView(food: food)  
-                }
             }
             .onAppear {
                 viewModel.getFoods()
