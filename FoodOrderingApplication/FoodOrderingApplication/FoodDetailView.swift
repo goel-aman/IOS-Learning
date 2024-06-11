@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct FoodDetailView: View {
-    
+    @Binding var isShowingDetail: Bool 
     let food: FoodModel
     
     var body: some View {
         
         VStack {
-            Image("foodImage")
-                .resizable()
+            foodImageView(urlString: food.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
@@ -93,7 +92,7 @@ struct FoodDetailView: View {
         .shadow(radius: 40)
         .overlay(
             Button {
-                print("dismiss")
+                isShowingDetail = false
             } label: {
                 ZStack {
                     Circle()
@@ -111,5 +110,15 @@ struct FoodDetailView: View {
 }
 
 #Preview {
-    FoodDetailView(food: MockData.sampleFood)
+    FoodDetailView(isShowingDetail: .constant(true), food: MockData.sampleFood)
+}
+
+struct NutritionInfo: View {
+    
+    let title: String
+    let value: String
+    
+    var body: some View {
+        
+    }
 }
