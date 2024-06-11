@@ -30,43 +30,12 @@ struct FoodDetailView: View {
                     .padding()
                 
                 HStack (spacing: 40) {
-                    VStack (spacing: 5) {
-                        Text("Calories")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(food.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
+                    NutritionInfo(title: "Calories", value: String(food.calories))
                     
-                    VStack (spacing: 5) {
-                        Text("Carbs")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(food.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
+                    NutritionInfo(title: "Carbs", value: "\(food.carbs)")
                     
-                    VStack (spacing: 5) {
-                        Text("Protein")
-                            .font(.caption)
-                            .fontWeight(.bold)
-                        
-                        Text("\(food.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                        
-                    }
+                    NutritionInfo(title: "Protein", value: "\(food.protein)")
                 }
-                
             }
             
             Spacer()
@@ -119,6 +88,16 @@ struct NutritionInfo: View {
     let value: String
     
     var body: some View {
-        
+        VStack (spacing: 5) {
+            Text("\(title)")
+                .font(.caption)
+                .fontWeight(.bold)
+            
+            Text("\(value)")
+                .foregroundColor(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+            
+        }
     }
 }
