@@ -28,6 +28,7 @@
 		1E4057E42C1299EF00561156 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4057E32C1299EF00561156 /* FoodDetailView.swift */; };
 		B19034752C1964FB00963469 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19034742C1964FB00963469 /* AccountViewModel.swift */; };
 		B19034772C19697F00963469 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19034762C19697F00963469 /* String+ext.swift */; };
+		B190347A2C19AB2100963469 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19034792C19AB2100963469 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		1E4057E32C1299EF00561156 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 		B19034742C1964FB00963469 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		B19034762C19697F00963469 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		B19034792C19AB2100963469 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +128,12 @@
 				1E14AF642C0C51A30040CED2 /* FoodAppTabView.swift */,
 				1E14AF662C0C51A60040CED2 /* Assets.xcassets */,
 				1E14AF682C0C51A60040CED2 /* Preview Content */,
-				1E14AF8E2C0C56880040CED2 /* AccountView.swift */,
+				B19034782C19973A00963469 /* Accounts */,
 				1E14AF902C0C56AE0040CED2 /* OrderView.swift */,
 				1E4057DE2C123D9100561156 /* Food */,
 				1E4057DD2C123D4A00561156 /* Common */,
-				1E4057E32C1299EF00561156 /* FoodDetailView.swift */,
-				B19034742C1964FB00963469 /* AccountViewModel.swift */,
 				B19034762C19697F00963469 /* String+ext.swift */,
+				B19034792C19AB2100963469 /* User.swift */,
 			);
 			path = FoodOrderingApplication;
 			sourceTree = "<group>";
@@ -165,6 +166,7 @@
 		1E14AF9C2C0F628A0040CED2 /* FoodListView */ = {
 			isa = PBXGroup;
 			children = (
+				1E4057E32C1299EF00561156 /* FoodDetailView.swift */,
 				1E4057D92C122DC500561156 /* RemoteImage.swift */,
 				1E14AF8C2C0C564E0040CED2 /* FoodListView.swift */,
 				1E14AF942C0E21F80040CED2 /* FoodLIstViewCell.swift */,
@@ -207,6 +209,15 @@
 				1E4057DC2C1237FC00561156 /* FoodViewModel */,
 			);
 			path = Food;
+			sourceTree = "<group>";
+		};
+		B19034782C19973A00963469 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				B19034742C1964FB00963469 /* AccountViewModel.swift */,
+				1E14AF8E2C0C56880040CED2 /* AccountView.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 				1E14AF8F2C0C56880040CED2 /* AccountView.swift in Sources */,
 				1E14AF8D2C0C564E0040CED2 /* FoodListView.swift in Sources */,
 				1E14AFA02C10C4EC0040CED2 /* LoadingView.swift in Sources */,
+				B190347A2C19AB2100963469 /* User.swift in Sources */,
 				1E4057DA2C122DC500561156 /* RemoteImage.swift in Sources */,
 				1E14AF652C0C51A30040CED2 /* FoodAppTabView.swift in Sources */,
 				1E14AF972C0E2EE60040CED2 /* NetworkManager.swift in Sources */,
