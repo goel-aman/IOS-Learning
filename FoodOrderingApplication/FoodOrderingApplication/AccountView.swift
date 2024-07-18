@@ -8,11 +8,8 @@
 import SwiftUI
 
 struct AccountView: View {
-    
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
+    @StateObject var viewModel = AccountViewModel()
+
     
     var body: some View {
         NavigationView {
@@ -26,9 +23,23 @@ struct AccountView: View {
                         .disableAutocorrection(false)
                     DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)
                     
-                    
+                    Button {
+                        print("Save")
+                    } label: {
+                        Text("Save Changes")
+                    }
                     
                 }
+                
+                
+                Section(header: Text("Requests")) {
+                    Toggle("Extra Napkins", isOn: $extraNapkins)
+                    
+                    Toggle("Refills", isOn: $frequentRefills)
+                        
+                }
+                // since the toggle was required on both the toggle option
+                .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("Account")
         }
