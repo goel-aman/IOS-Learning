@@ -10,8 +10,13 @@ import SwiftUI
 struct OrderView: View {
     var body: some View {
         NavigationView {
-            Text("Orders")
-                .navigationTitle("Orders")
+            
+            VStack {
+                List {
+                    ForEach(<#T##data: RandomAccessCollection##RandomAccessCollection#>, id: <#T##KeyPath<RandomAccessCollection.Element, Hashable>#>, content: <#T##(RandomAccessCollection.Element) -> AccessibilityRotorContent#>)
+                }
+            }
+            .navigationTitle("Orders")
         }
     }
 }
