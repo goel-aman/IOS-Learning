@@ -1,7 +1,5 @@
 import UIKit
 
-
-
 // lets say tomorrow you want to do some changes on userdefaults. let say you want to encrypt the data before storing you just have to change the logic in the wrapper code and it will reflect every where that wrapper is used.
 
 
@@ -43,7 +41,6 @@ func shouldShowOnboardingUI() {
 }
 
 // after Property Wrapper
-
 func shouldShowOnboardingUIWithPropertyWrapper() {
     if UserDefaults.hasOnboarded {
         // do something
