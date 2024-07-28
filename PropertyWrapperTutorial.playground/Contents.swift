@@ -1,50 +1,99 @@
+import Foundation
 import UIKit
 
-// lets say tomorrow you want to do some changes on userdefaults. let say you want to encrypt the data before storing you just have to change the logic in the wrapper code and it will reflect every where that wrapper is used.
+// property wrappers can be used with structure class or enum.
+//
+//extension String {
+//    func isValidEmail() -> Bool {
+//        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-za-z]{2,64}"
+//        let pred = NSPredicate(format: "SELF MATCHES %@", regex)
+//        return pred.evaluate(with: self)
+//    }
+//}
+//
+//struct User {
+//    var name: String
+//    var email: String
+//    
+//    func validate() -> Bool {
+//        if (name.isEmpty || email.isEmpty) {
+//            debugPrint("name and a valid email is required and cannot be empty")
+//            return false
+//        }
+//        
+//        if email.isValidEmail() == false {
+//            debugPrint("email is not valid, please enter valid email")
+//            return false
+//        }
+//        
+//        return true
+//    }
+//     
+//    func registerUser() {
+//        if (validate()) {
+//            // saving user records...
+//            debugPrint("User Data Saved")
+//        }
+//    }
+//}
+//
+//let user = User(name: "codecat15", email: "codecate@gmail.com")
+//user.registerUser()
+//
 
+// in the example above isValidEmail is a function which is there in extension of string. Hence any string variable can call it but that should not be the case only email should be able to access it.
+// Over here property wrappers can help to avoid this situation
 
 @propertyWrapper
-struct UserDefault<Value> {
-    let key: String
-    let defaultValue: Value
-    let container: UserDefaults = .standard
-    
-    var wrappedValue: Value {
+struct EmailPropertyWrapper {
+    private var value: String
+    var wrappedValue: String {
         get {
-            container.object(forKey: key) as? Value ?? defaultValue
+            return (isValidEmail(value) == true ? value : String())
         }
-        
         set {
-            container.set(newValue, forKey: key)
+            value = newValue
+        }
+    }
+    
+    init(value: String) {
+        self.value = value
+    }
+    
+    private func isValidEmail(_ email: String) -> Bool {
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-za-z]{2,64}"
+        let pred = NSPredicate(format: "SELF MATCHES %@", regex)
+        return pred.evaluate(with: email)
+    }
+}
+
+struct User {
+    var name: String
+    @EmailPropertyWrapper var email: String
+
+    func validate() -> Bool {
+        if (name.isEmpty || email.isEmpty) {
+            debugPrint("name and a valid email is required and cannot be empty")
+            return false
+        }
+
+        return true
+    }
+
+    func registerUser() {
+        if (validate()) {
+            // saving user records...
+            debugPrint("User Data Saved")
         }
     }
 }
 
-extension UserDefaults {
-    public enum Keys {
-        static let hasOnboarded = "hasOnboarded"
-    }
-     
-    @UserDefault(key: UserDefaults.Keys.hasOnboarded, defaultValue: false)
-    static var hasOnboarded: Bool
-}
+let user = User(name: "codecat15", email: EmailPropertyWrapper(value: "codecategmail.com"))
+user.registerUser()
+
+// Over here property wrapper helped us limiting validEmail function only to properties which are marked as emailPropertyWrapper.
 
 
 
-// before Property Wrapper
-func shouldShowOnboardingUI() {
-    if UserDefaults.standard.bool(forKey: "hasOnboarded") {
-        // show app
-    } else {
-        
-    }
-}
 
-// after Property Wrapper
-func shouldShowOnboardingUIWithPropertyWrapper() {
-    if UserDefaults.hasOnboarded {
-        // do something
-    } else {
-        // do something else
-    }
-}
+
