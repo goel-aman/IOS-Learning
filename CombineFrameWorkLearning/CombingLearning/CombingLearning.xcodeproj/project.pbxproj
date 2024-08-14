@@ -16,6 +16,8 @@
 		1EA0F09D2C48BF1A0011BC83 /* CombingLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0F09C2C48BF1A0011BC83 /* CombingLearningTests.swift */; };
 		1EA0F0A72C48BF1A0011BC83 /* CombingLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0F0A62C48BF1A0011BC83 /* CombingLearningUITests.swift */; };
 		1EA0F0A92C48BF1A0011BC83 /* CombingLearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0F0A82C48BF1A0011BC83 /* CombingLearningUITestsLaunchTests.swift */; };
+		1EBEB9512C6D24150016833F /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEB9502C6D24150016833F /* secondViewController.swift */; };
+		1EBEB9532C6D24290016833F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEB9522C6D24290016833F /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1EA0F0A22C48BF1A0011BC83 /* CombingLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombingLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA0F0A62C48BF1A0011BC83 /* CombingLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombingLearningUITests.swift; sourceTree = "<group>"; };
 		1EA0F0A82C48BF1A0011BC83 /* CombingLearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombingLearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EBEB9502C6D24150016833F /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		1EBEB9522C6D24290016833F /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				1EA0F08E2C48BF190011BC83 /* Assets.xcassets */,
 				1EA0F0902C48BF190011BC83 /* LaunchScreen.storyboard */,
 				1EA0F0932C48BF190011BC83 /* Info.plist */,
+				1EBEB9502C6D24150016833F /* secondViewController.swift */,
+				1EBEB9522C6D24290016833F /* ThirdViewController.swift */,
 			);
 			path = CombingLearning;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EBEB9512C6D24150016833F /* secondViewController.swift in Sources */,
 				1EA0F08A2C48BF170011BC83 /* ViewController.swift in Sources */,
+				1EBEB9532C6D24290016833F /* ThirdViewController.swift in Sources */,
 				1EA0F0862C48BF170011BC83 /* AppDelegate.swift in Sources */,
 				1EA0F0882C48BF170011BC83 /* SceneDelegate.swift in Sources */,
 			);
