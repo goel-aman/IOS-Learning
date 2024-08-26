@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         constructTextFields()
         
         textField1.textPublisher
-            
             .map({ value -> FormField1 in
                 return FormField1(value: Int(value) ?? 0)
             })
