@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MigratingAsynchronousCodeToUseCombine_Futures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTy-l3-CG5">
+                                <rect key="frame" x="32" y="72" width="71" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Async"/>
+                                <connections>
+                                    <action selector="asyncButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZ4-s4-YNp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnV-Wy-W6z">
+                                <rect key="frame" x="145" y="72" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Future"/>
+                                <connections>
+                                    <action selector="futureButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNq-fJ-Ab8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6W0-z2-nA2">
+                                <rect key="frame" x="249" y="72" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="FutureError"/>
+                                <connections>
+                                    <action selector="performFutureErrorTask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GD-D1-GPv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHO-g1-lfi">
+                                <rect key="frame" x="0.0" y="357" width="393" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6W0-z2-nA2" secondAttribute="trailing" constant="33" id="Q16-BD-KE3"/>
+                            <constraint firstItem="KnV-Wy-W6z" firstAttribute="leading" secondItem="XTy-l3-CG5" secondAttribute="trailing" constant="42" id="VtK-dh-MQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHO-g1-lfi" secondAttribute="trailing" id="Wbx-sb-Sjt"/>
+                            <constraint firstItem="XTy-l3-CG5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="cfg-bq-U6y"/>
+                            <constraint firstItem="yHO-g1-lfi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cj3-LW-5pG"/>
+                            <constraint firstItem="6W0-z2-nA2" firstAttribute="firstBaseline" secondItem="KnV-Wy-W6z" secondAttribute="firstBaseline" id="gNk-XP-WzN"/>
+                            <constraint firstItem="6W0-z2-nA2" firstAttribute="leading" secondItem="KnV-Wy-W6z" secondAttribute="trailing" constant="30" id="nKe-qI-kst"/>
+                            <constraint firstItem="KnV-Wy-W6z" firstAttribute="firstBaseline" secondItem="XTy-l3-CG5" secondAttribute="firstBaseline" id="nyT-mq-Z4j"/>
+                            <constraint firstItem="yHO-g1-lfi" firstAttribute="top" secondItem="KnV-Wy-W6z" secondAttribute="bottom" constant="250" id="t5k-mc-df0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yHO-g1-lfi" secondAttribute="bottom" constant="440" id="vyp-qF-Lbm"/>
+                            <constraint firstItem="6W0-z2-nA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="xwJ-hI-G57"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="async" destination="XTy-l3-CG5" id="Tm0-q0-HX7"/>
+                        <outlet property="futureButton" destination="KnV-Wy-W6z" id="OvP-7g-ef7"/>
+                        <outlet property="futureErrorButton" destination="6W0-z2-nA2" id="NCU-7K-e9T"/>
+                        <outlet property="showContent" destination="yHO-g1-lfi" id="IuX-aj-5wn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
