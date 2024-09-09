@@ -6,7 +6,9 @@
 //
 import SwiftUI
 struct FoodDetailView: View {
-    @Binding var isShowingDetail: Bool
+    @EnvironmentObject var order: Order
+    
+      @Binding var isShowingDetail: Bool
     let food: FoodModel
     
     var body: some View {
@@ -39,7 +41,10 @@ struct FoodDetailView: View {
             Spacer()
             
             Button {
-                print("tapped")
+                order.items.append(food)
+                print("aman add to order clicked...")
+                isShowingDetail = false 
+                print("order is: \(MockData.orders)")
             } label: {
                 Text("$\(food.price, specifier: "%.2f") - Add T o Order")
                     .font(.title3)
