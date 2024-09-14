@@ -31,7 +31,7 @@ struct OrderView: View {
                     Button {
                         print("order placed")
                     } label: {
-                        Text("Place Order")
+                        Text("\(order.totalPrice) Place Order")
                             .font(.title3)
                             .fontWeight(.semibold)
                             .frame(width: 260, height: 50)
