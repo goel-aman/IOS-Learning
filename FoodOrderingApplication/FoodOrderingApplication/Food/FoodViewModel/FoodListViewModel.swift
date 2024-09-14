@@ -15,19 +15,54 @@ final class FoodListViewModel: ObservableObject {
     @Published var isShowingDetail = false
     @Published var selectedFood: FoodModel?
     
-    func getFoods() {
+//    func getFoods() {
+//        isLoading = true
+//        networkManager.shared.getAppetizers { [self] result in
+//            DispatchQueue.main.async { [self] in
+//                isLoading = false 
+//                switch result {
+//                    
+//                     // after setting up the variable SWiftUI is going to update the view hence it should execute on the main thread.
+//                    
+//                case .success(let foods):
+//                    self.foods = foods
+//                case .failure(let error):
+//                    switch error {
+//                    case .invalidResponse:
+//                        alertItem = AlertContext.invalidResponse
+//                        
+//                    case .invalidURL:
+//                        alertItem = AlertContext.invalidURL
+//                        
+//                    case .invalidData:
+//                        alertItem = AlertContext.invalidData
+//                        
+//                    case .unableToComplete:
+//                        alertItem = AlertContext.unableToComplete
+//                        
+//                    }
+//                    
+//                }
+//            }
+//        }
+//    }
+    
+    @MainActor func getFoods() {
         isLoading = true
-        networkManager.shared.getAppetizers { [self] result in
-            DispatchQueue.main.async { [self] in
-                isLoading = false 
-                switch result {
-                    
-                     // after setting up the variable SWiftUI is going to update the view hence it should execute on the main thread.
-                    
-                case .success(let foods):
-                    self.foods = foods
-                case .failure(let error):
-                    switch error {
+        
+        Task {
+            do {
+                isLoading = false
+                let foods: [FoodModel] = try await networkManager.shared.getAppetizers()
+                
+                self.foods = foods
+            } catch {
+                
+                isLoading = false
+                
+                if let apError = error as? APError {
+                    switch apError {
+                        
                     case .invalidResponse:
                         alertItem = AlertContext.invalidResponse
                         
@@ -39,9 +74,10 @@ final class FoodListViewModel: ObservableObject {
                         
                     case .unableToComplete:
                         alertItem = AlertContext.unableToComplete
-                        
                     }
-                    
+                } else {
+                    // generic error placeholder....
+                    alertItem = AlertContext.invalidResponse
                 }
             }
         }
