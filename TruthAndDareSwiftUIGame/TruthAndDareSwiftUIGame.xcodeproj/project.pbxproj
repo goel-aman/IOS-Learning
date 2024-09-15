@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EF3B34C2C96F9050049EFEB /* TruthAndDareSwiftUIGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B34B2C96F9050049EFEB /* TruthAndDareSwiftUIGameApp.swift */; };
+		1EF3B34E2C96F9050049EFEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B34D2C96F9050049EFEB /* ContentView.swift */; };
+		1EF3B3502C96F9070049EFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF3B34F2C96F9070049EFEB /* Assets.xcassets */; };
+		1EF3B3532C96F9070049EFEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF3B3522C96F9070049EFEB /* Preview Assets.xcassets */; };
+		1EF3B35D2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B35C2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.swift */; };
+		1EF3B3672C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B3662C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.swift */; };
+		1EF3B3692C96F9070049EFEB /* TruthAndDareSwiftUIGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B3682C96F9070049EFEB /* TruthAndDareSwiftUIGameUITestsLaunchTests.swift */; };
+		1EF3B3762C96FE420049EFEB /* TruthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B3752C96FE420049EFEB /* TruthView.swift */; };
+		1EF3B37A2C96FE6E0049EFEB /* DareUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B3792C96FE6E0049EFEB /* DareUIView.swift */; };
+		1EF3B37C2C96FFF00049EFEB /* TruthAndDareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B37B2C96FFF00049EFEB /* TruthAndDareData.swift */; };
+		1EF3B37E2C9701020049EFEB /* TruthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B37D2C9701020049EFEB /* TruthViewModel.swift */; };
+		1EF3B3802C9714800049EFEB /* DareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3B37F2C9714800049EFEB /* DareViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EF3B3592C96F9070049EFEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF3B3402C96F9050049EFEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF3B3472C96F9050049EFEB;
+			remoteInfo = TruthAndDareSwiftUIGame;
+		};
+		1EF3B3632C96F9070049EFEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EF3B3402C96F9050049EFEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EF3B3472C96F9050049EFEB;
+			remoteInfo = TruthAndDareSwiftUIGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EF3B3482C96F9050049EFEB /* TruthAndDareSwiftUIGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruthAndDareSwiftUIGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF3B34B2C96F9050049EFEB /* TruthAndDareSwiftUIGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthAndDareSwiftUIGameApp.swift; sourceTree = "<group>"; };
+		1EF3B34D2C96F9050049EFEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1EF3B34F2C96F9070049EFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EF3B3522C96F9070049EFEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1EF3B3582C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruthAndDareSwiftUIGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF3B35C2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthAndDareSwiftUIGameTests.swift; sourceTree = "<group>"; };
+		1EF3B3622C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TruthAndDareSwiftUIGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF3B3662C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthAndDareSwiftUIGameUITests.swift; sourceTree = "<group>"; };
+		1EF3B3682C96F9070049EFEB /* TruthAndDareSwiftUIGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthAndDareSwiftUIGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EF3B3752C96FE420049EFEB /* TruthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthView.swift; sourceTree = "<group>"; };
+		1EF3B3792C96FE6E0049EFEB /* DareUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareUIView.swift; sourceTree = "<group>"; };
+		1EF3B37B2C96FFF00049EFEB /* TruthAndDareData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthAndDareData.swift; sourceTree = "<group>"; };
+		1EF3B37D2C9701020049EFEB /* TruthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthViewModel.swift; sourceTree = "<group>"; };
+		1EF3B37F2C9714800049EFEB /* DareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EF3B3452C96F9050049EFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B3552C96F9070049EFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B35F2C96F9070049EFEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF3B33F2C96F9050049EFEB = {
+			isa = PBXGroup;
+			children = (
+				1EF3B34A2C96F9050049EFEB /* TruthAndDareSwiftUIGame */,
+				1EF3B35B2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests */,
+				1EF3B3652C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests */,
+				1EF3B3492C96F9050049EFEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1EF3B3492C96F9050049EFEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3B3482C96F9050049EFEB /* TruthAndDareSwiftUIGame.app */,
+				1EF3B3582C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.xctest */,
+				1EF3B3622C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EF3B34A2C96F9050049EFEB /* TruthAndDareSwiftUIGame */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3B34B2C96F9050049EFEB /* TruthAndDareSwiftUIGameApp.swift */,
+				1EF3B34D2C96F9050049EFEB /* ContentView.swift */,
+				1EF3B34F2C96F9070049EFEB /* Assets.xcassets */,
+				1EF3B3512C96F9070049EFEB /* Preview Content */,
+				1EF3B3752C96FE420049EFEB /* TruthView.swift */,
+				1EF3B3792C96FE6E0049EFEB /* DareUIView.swift */,
+				1EF3B37B2C96FFF00049EFEB /* TruthAndDareData.swift */,
+				1EF3B37D2C9701020049EFEB /* TruthViewModel.swift */,
+				1EF3B37F2C9714800049EFEB /* DareViewModel.swift */,
+			);
+			path = TruthAndDareSwiftUIGame;
+			sourceTree = "<group>";
+		};
+		1EF3B3512C96F9070049EFEB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3B3522C96F9070049EFEB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1EF3B35B2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3B35C2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.swift */,
+			);
+			path = TruthAndDareSwiftUIGameTests;
+			sourceTree = "<group>";
+		};
+		1EF3B3652C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3B3662C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.swift */,
+				1EF3B3682C96F9070049EFEB /* TruthAndDareSwiftUIGameUITestsLaunchTests.swift */,
+			);
+			path = TruthAndDareSwiftUIGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EF3B3472C96F9050049EFEB /* TruthAndDareSwiftUIGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF3B36C2C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGame" */;
+			buildPhases = (
+				1EF3B3442C96F9050049EFEB /* Sources */,
+				1EF3B3452C96F9050049EFEB /* Frameworks */,
+				1EF3B3462C96F9050049EFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruthAndDareSwiftUIGame;
+			productName = TruthAndDareSwiftUIGame;
+			productReference = 1EF3B3482C96F9050049EFEB /* TruthAndDareSwiftUIGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EF3B3572C96F9070049EFEB /* TruthAndDareSwiftUIGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF3B36F2C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGameTests" */;
+			buildPhases = (
+				1EF3B3542C96F9070049EFEB /* Sources */,
+				1EF3B3552C96F9070049EFEB /* Frameworks */,
+				1EF3B3562C96F9070049EFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EF3B35A2C96F9070049EFEB /* PBXTargetDependency */,
+			);
+			name = TruthAndDareSwiftUIGameTests;
+			productName = TruthAndDareSwiftUIGameTests;
+			productReference = 1EF3B3582C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EF3B3612C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF3B3722C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGameUITests" */;
+			buildPhases = (
+				1EF3B35E2C96F9070049EFEB /* Sources */,
+				1EF3B35F2C96F9070049EFEB /* Frameworks */,
+				1EF3B3602C96F9070049EFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EF3B3642C96F9070049EFEB /* PBXTargetDependency */,
+			);
+			name = TruthAndDareSwiftUIGameUITests;
+			productName = TruthAndDareSwiftUIGameUITests;
+			productReference = 1EF3B3622C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EF3B3402C96F9050049EFEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1EF3B3472C96F9050049EFEB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1EF3B3572C96F9070049EFEB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1EF3B3472C96F9050049EFEB;
+					};
+					1EF3B3612C96F9070049EFEB = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1EF3B3472C96F9050049EFEB;
+					};
+				};
+			};
+			buildConfigurationList = 1EF3B3432C96F9050049EFEB /* Build configuration list for PBXProject "TruthAndDareSwiftUIGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EF3B33F2C96F9050049EFEB;
+			productRefGroup = 1EF3B3492C96F9050049EFEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EF3B3472C96F9050049EFEB /* TruthAndDareSwiftUIGame */,
+				1EF3B3572C96F9070049EFEB /* TruthAndDareSwiftUIGameTests */,
+				1EF3B3612C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EF3B3462C96F9050049EFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF3B3532C96F9070049EFEB /* Preview Assets.xcassets in Resources */,
+				1EF3B3502C96F9070049EFEB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B3562C96F9070049EFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B3602C96F9070049EFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EF3B3442C96F9050049EFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF3B37A2C96FE6E0049EFEB /* DareUIView.swift in Sources */,
+				1EF3B34E2C96F9050049EFEB /* ContentView.swift in Sources */,
+				1EF3B37E2C9701020049EFEB /* TruthViewModel.swift in Sources */,
+				1EF3B3802C9714800049EFEB /* DareViewModel.swift in Sources */,
+				1EF3B3762C96FE420049EFEB /* TruthView.swift in Sources */,
+				1EF3B37C2C96FFF00049EFEB /* TruthAndDareData.swift in Sources */,
+				1EF3B34C2C96F9050049EFEB /* TruthAndDareSwiftUIGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B3542C96F9070049EFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF3B35D2C96F9070049EFEB /* TruthAndDareSwiftUIGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EF3B35E2C96F9070049EFEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EF3B3692C96F9070049EFEB /* TruthAndDareSwiftUIGameUITestsLaunchTests.swift in Sources */,
+				1EF3B3672C96F9070049EFEB /* TruthAndDareSwiftUIGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EF3B35A2C96F9070049EFEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EF3B3472C96F9050049EFEB /* TruthAndDareSwiftUIGame */;
+			targetProxy = 1EF3B3592C96F9070049EFEB /* PBXContainerItemProxy */;
+		};
+		1EF3B3642C96F9070049EFEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EF3B3472C96F9050049EFEB /* TruthAndDareSwiftUIGame */;
+			targetProxy = 1EF3B3632C96F9070049EFEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EF3B36A2C96F9070049EFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1EF3B36B2C96F9070049EFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EF3B36D2C96F9070049EFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TruthAndDareSwiftUIGame/Preview Content\"";
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1EF3B36E2C96F9070049EFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TruthAndDareSwiftUIGame/Preview Content\"";
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1EF3B3702C96F9070049EFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruthAndDareSwiftUIGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TruthAndDareSwiftUIGame";
+			};
+			name = Debug;
+		};
+		1EF3B3712C96F9070049EFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TruthAndDareSwiftUIGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TruthAndDareSwiftUIGame";
+			};
+			name = Release;
+		};
+		1EF3B3732C96F9070049EFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TruthAndDareSwiftUIGame;
+			};
+			name = Debug;
+		};
+		1EF3B3742C96F9070049EFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLM4H4R54R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.personal.TruthAndDareSwiftUIGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TruthAndDareSwiftUIGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EF3B3432C96F9050049EFEB /* Build configuration list for PBXProject "TruthAndDareSwiftUIGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF3B36A2C96F9070049EFEB /* Debug */,
+				1EF3B36B2C96F9070049EFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF3B36C2C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF3B36D2C96F9070049EFEB /* Debug */,
+				1EF3B36E2C96F9070049EFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF3B36F2C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF3B3702C96F9070049EFEB /* Debug */,
+				1EF3B3712C96F9070049EFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EF3B3722C96F9070049EFEB /* Build configuration list for PBXNativeTarget "TruthAndDareSwiftUIGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EF3B3732C96F9070049EFEB /* Debug */,
+				1EF3B3742C96F9070049EFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EF3B3402C96F9050049EFEB /* Project object */;
+}

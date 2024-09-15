@@ -18,7 +18,7 @@ struct FoodLIstViewCell: View {
 //                .cornerRadius(8.0)
 //                
 //            
-            
+               
             AsyncImage(url: URL(string: food.imageURL)) { image in
                 image
                     .resizable()
