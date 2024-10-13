@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Restaurants" image="RestaurantImage" id="qTD-qT-9oV"/>
+                    <tabBarItem key="tabBarItem" title="Restaurants" image="Restaurant" id="qTD-qT-9oV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,6 +30,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OT3-UL-50R" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nCP-qf-MV2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -55,7 +56,7 @@
                         <viewLayoutGuide key="safeArea" id="PNu-yv-uUL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Market" id="Sxs-s0-eNx"/>
+                    <tabBarItem key="tabBarItem" title="Market" image="Shop" id="Sxs-s0-eNx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFK-dj-0Qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +72,7 @@
                         <viewLayoutGuide key="safeArea" id="aea-Pv-rnp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Cart" id="ytw-0R-nHE"/>
+                    <tabBarItem key="tabBarItem" title="My Cart" image="Cart" id="ytw-0R-nHE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tjI-Fh-v9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,10 +85,20 @@
                     <view key="view" contentMode="scaleToFill" id="2MP-3g-foq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mS-TD-oSn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Order History" id="K9y-fC-vj8"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KNO-yt-Vc8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My Orders" id="fh2-h9-R1y"/>
+                    <tabBarItem key="tabBarItem" title="My Orders" image="Order" id="fh2-h9-R1y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RhN-uS-YTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="DOP-mj-kKD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="1HR-K9-4CG"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="1HR-K9-4CG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9hh-1e-iT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,7 +122,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RestaurantImage" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="Cart" width="25" height="25.333333969116211"/>
+        <image name="Order" width="25.333333969116211" height="21.333333969116211"/>
+        <image name="Restaurant" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="Shop" width="25.333333969116211" height="25.333333969116211"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
