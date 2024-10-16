@@ -13,10 +13,7 @@ struct OrderHistoryModel: Codable {
     let referenceNumber: String?
     let arrivedAt: String?
     
-    let restaurantDetail:
-    
-    
-    
+    let restaurantDetail: RestaurantDetail?
 //    
 //    private enum CodingKeys: String, CodingKey {
 //        case orderId
@@ -25,9 +22,12 @@ struct OrderHistoryModel: Codable {
 
 struct RestaurantDetail: Codable {
     let name: String?
-    let images:
+    let images: [ImageData]?
 }
 
 struct ImageData: Codable {
-    
+    let serverImageUrl: String?
+    let smallImageUrl: String?
 }
+
+
