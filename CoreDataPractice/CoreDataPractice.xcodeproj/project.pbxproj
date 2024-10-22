@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E87E8352CC80649007E5EDC /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87E8332CC80649007E5EDC /* Person+CoreDataClass.swift */; };
+		1E87E8362CC80649007E5EDC /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87E8322CC80649007E5EDC /* Family+CoreDataProperties.swift */; };
+		1E87E8372CC80649007E5EDC /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87E8312CC80649007E5EDC /* Family+CoreDataClass.swift */; };
+		1E87E8382CC80649007E5EDC /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E87E8342CC80649007E5EDC /* Person+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1E87E8102CC5271D007E5EDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,10 @@
 		1E87E7F62CC5271B007E5EDC /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E87E80F2CC5271D007E5EDC /* CoreDataPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E87E8192CC5271D007E5EDC /* CoreDataPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E87E8312CC80649007E5EDC /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1E87E8322CC80649007E5EDC /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1E87E8332CC80649007E5EDC /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1E87E8342CC80649007E5EDC /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +99,10 @@
 		1E87E7ED2CC5271B007E5EDC = {
 			isa = PBXGroup;
 			children = (
+				1E87E8312CC80649007E5EDC /* Family+CoreDataClass.swift */,
+				1E87E8322CC80649007E5EDC /* Family+CoreDataProperties.swift */,
+				1E87E8332CC80649007E5EDC /* Person+CoreDataClass.swift */,
+				1E87E8342CC80649007E5EDC /* Person+CoreDataProperties.swift */,
 				1E87E7F82CC5271B007E5EDC /* CoreDataPractice */,
 				1E87E8122CC5271D007E5EDC /* CoreDataPracticeTests */,
 				1E87E81C2CC5271D007E5EDC /* CoreDataPracticeUITests */,
@@ -249,6 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E87E8352CC80649007E5EDC /* Person+CoreDataClass.swift in Sources */,
+				1E87E8362CC80649007E5EDC /* Family+CoreDataProperties.swift in Sources */,
+				1E87E8372CC80649007E5EDC /* Family+CoreDataClass.swift in Sources */,
+				1E87E8382CC80649007E5EDC /* Person+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
