@@ -11,9 +11,13 @@ import UIKit
 class NotesViewController: UIViewController {
     @IBOutlet weak var upgradeButton: UIButton!
 
+    let viewModel = NotesViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupButton()
+        
+        viewModel.getData()
     }
     
     func setupButton() {

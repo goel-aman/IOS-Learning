@@ -12,5 +12,7 @@ struct APIEndpoints {
     
     static let OtpLoginNumberInput = "\(baseURL)/users/phone_number_login"
     
-    static let otpVerification = "\(baseURL)//users/verify_otp"
+    static let otpVerification = "\(baseURL)/users/verify_otp"
+    
+    static let notes = "\(baseURL)/users/test_profile_list"
 }

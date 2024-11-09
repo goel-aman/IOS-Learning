@@ -248,7 +248,7 @@
                         <viewLayoutGuide key="safeArea" id="TsU-R0-uIz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Matches" id="rAz-Qw-BFy"/>
+                    <tabBarItem key="tabBarItem" title="Matches" image="Matches" id="rAz-Qw-BFy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6p-g4-i7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,7 +264,7 @@
                         <viewLayoutGuide key="safeArea" id="EV8-jh-wwx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="KbW-qZ-ENj"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="KbW-qZ-ENj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEg-qa-yiD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -405,8 +405,10 @@
     <resources>
         <image name="Beena" width="167" height="255"/>
         <image name="Discover" width="19" height="21.333333969116211"/>
+        <image name="Matches" width="29.666666030883789" height="21.666666030883789"/>
         <image name="Notes" width="25.666666030883789" height="18.333333969116211"/>
         <image name="Person" width="344" height="344"/>
+        <image name="Profile" width="41" height="41"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
