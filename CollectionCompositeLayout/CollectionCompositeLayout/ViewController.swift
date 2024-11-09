@@ -30,22 +30,74 @@ class ViewController: UIViewController {
         // Item
         let item = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize (
-                widthDimension: .fractionalWidth(1),
+                widthDimension: .fractionalWidth(2/3),
                 heightDimension: .fractionalHeight(1))
         )
         
-        // Group
-        let group = NSCollectionLayoutGroup.horizontal(
+        item.contentInsets = NSDirectionalEdgeInsets (
+            top: 2,
+            leading: 2,
+            bottom: 2,
+            trailing: 2
+        )
+        
+        
+        
+        let verticalStackItem = NSCollectionLayoutItem(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .fractionalHeight(15/100)
-            ),
-            subitem: item,
+                heightDimension: .fractionalHeight(1/2)
+            )
+        )
+        
+        verticalStackItem.contentInsets = NSDirectionalEdgeInsets (top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        let verticalStackGroup = NSCollectionLayoutGroup.vertical(
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/3),
+                                               heightDimension: .fractionalHeight(1)),
+            repeatingSubitem: verticalStackItem,
             count: 2
         )
         
+        let tripleItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1/3),
+            heightDimension: .absolute(100)
+        ))
+        
+        tripleItem.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        
+                            
+        
+        let tripleHorizontalGroup = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1/3)),
+            subitem: tripleItem,
+            count: 3
+        )
+        
+                                                
+        // Group
+        let horizontalGroup = NSCollectionLayoutGroup.horizontal(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .fractionalHeight(2/3)
+            ),
+            subitems: [item, verticalStackGroup]
+        )
+        
+//        horizontalGroup.contentInsets = NSDirectionalEdgeInsets(top: 2, leading: 2, bottom: 2, trailing: 2)
+        
+        let verticalGroup = NSCollectionLayoutGroup.vertical(
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(3/5)),
+            subitems: [
+                horizontalGroup,
+                tripleHorizontalGroup
+            ]
+        )
+        
+        
         // Sections
-        let section = NSCollectionLayoutSection(group: group)
+        let section = NSCollectionLayoutSection(group: verticalGroup)
         
         
         // Return
