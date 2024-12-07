@@ -12,18 +12,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+        let phoneStock = PhoneStocks()
+                
+        let dispatchQueue = DispatchQueue(label: "myQueue", attributes: [.concurrent])
         
-        let flight: Flight = Flight()
+        dispatchQueue.async {
+            Task.detached {
+                await phoneStock.purchase(phone: "iPhone 13")
+            }
+           
+        }
         
-        let queue1: DispatchQueue = DispatchQueue(label: "queue1")
-        let queue2: DispatchQueue = DispatchQueue(label: "queue2")
-        
-        queue1.async {
-            let bookedSeat: String = flight.bookSeats()
-            
+        dispatchQueue.async {
+            Task.detached {
+                await phoneStock.getAvailablePhones()
+            }
         }
     }
-
-
 }
 
