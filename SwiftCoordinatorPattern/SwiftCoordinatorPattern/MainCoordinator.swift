@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class MainCoordinator: Coordinator {
-    var children: [any Coordinator]? = nil 
+    var children: [any Coordinator]? = nil
     
     var navigationController: UINavigationController?
     
